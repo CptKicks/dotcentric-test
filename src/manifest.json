@@ -1,6 +1,6 @@
 {
-  "name": "dotcentric-test",
-  "short_name": "dotcentric-test",
+  "name": "Code Test - We Do Awesome Things",
+  "short_name": "Code Test",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
