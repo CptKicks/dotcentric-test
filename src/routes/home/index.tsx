@@ -24,9 +24,9 @@ const Home: FunctionalComponent = () => {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12">
-                            <SectionHeading title="We Do Awesome Things"
-                                            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                            />
+                            <SectionHeading title="We Do Awesome Things">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                            </SectionHeading>
                         </div>
 
                         <div className="col-lg-9 col-12">
@@ -55,9 +55,9 @@ const Home: FunctionalComponent = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <SectionHeading title="We Do Really Awesome Things"
-                                            subtitle={["Lorem ipsum dolor sit amet, ", <a key="reallyAwesomeLink" href={'/'}>link</a>,  " consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]}
-                            />
+                            <SectionHeading title="We Do Really Awesome Things">
+                                <span>Lorem ipsum dolor sit amet, <a key="reallyAwesomeLink" href={'/'}>link</a> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                            </SectionHeading>
                         </div>
                     </div>
 
@@ -85,17 +85,15 @@ const Home: FunctionalComponent = () => {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12">
-                            <SectionHeading title="Contact About Awesomeness"
-                                            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                            />
+                            <SectionHeading title="Contact About Awesomeness">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </SectionHeading>
                         </div>
 
                         <div className="col-lg-7 col-md-9 col-12">
                             <ContactForm />
                         </div>
                     </div>
-
-
                 </div>
             </section>
         </div>

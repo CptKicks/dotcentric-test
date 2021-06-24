@@ -1,18 +1,18 @@
-import { FunctionalComponent, h } from 'preact';
+import { ComponentChild, FunctionalComponent, h } from 'preact';
 
 interface Props {
     title: string;
-    subtitle: any;
+    children: ComponentChild[] | ComponentChild;
 }
 
-const SectionHeading: FunctionalComponent<Props> = (props: Props) => {
+const SectionHeading: FunctionalComponent<Props> = ( props: Props ) => {
     return (
         <div className="row justify-content-center mb-lg-7 mb-5">
             <div className="col-lg-8 col-md-10 col-12">
                 <div className="text-center">
                     <div className="fs-1">{props.title}</div>
                     <div className="fs-4 fw-light text-grey">
-                        {props.subtitle}
+                        {props.children}
                     </div>
                 </div>
             </div>
