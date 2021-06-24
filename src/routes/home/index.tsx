@@ -32,16 +32,15 @@ const Home: FunctionalComponent = () => {
                         <div className="col-lg-9 col-12">
                             <MonitorShowcase>
                                 <img class="w-100"
-                                    src="../../assets/img/topical-summer-app-1020.jpg" alt="Tropical Summer App"
+                                     alt="Tropical Summer App"
                                     srcSet="../../assets/img/tropical-summer-app-327.jpg 327w,
                                             ../../assets/img/tropical-summer-app-510.jpg 510w,
                                             ../../assets/img/tropical-summer-app-654.jpg 654w,
                                             ../../assets/img/tropical-summer-app-1020.jpg 1020w,
-                                            ../../assets/img/tropical-summer-app-1604.jpg 1604w,
-                                    "
+                                            ../../assets/img/tropical-summer-app-1604.jpg 1604w"
                                     sizes="(min-width: 1200px) 802px,
-                                           (min-width: 768px) 684px,
-                                           (min-width: 576px) 505px,
+                                           (min-width: 768px) and (max-width: 1199.98px) 684px,
+                                           (min-width: 576px) and (max-width: 767.98px) 505px,
                                            calc(100vw - 30px)"
                                 />
                             </MonitorShowcase>
