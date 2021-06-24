@@ -1,0 +1,32 @@
+// Type Utility classes
+@each $index, $font-size in $mobile-font-sizes {
+  .fs-#{$index} {
+    font-size: $font-size;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  @each $index, $font-size in $desktop-font-sizes {
+    .fs-#{$index} {
+      font-size: $font-size;
+    }
+  }
+}
+
+// Headings - in sycn with fs
+@for $index from 1 through 6 {
+  h#{$index} {
+    font-size: map-get($mobile-font-sizes, $index);
+
+    @include media-breakpoint-up(lg) {
+      font-size: map-get($desktop-font-sizes, $index);
+    }
+  }
+}
+
+// Font weights
+@each $sizeName, $font-weight in $font-weights {
+  .fw-#{$sizeName} {
+    font-weight: $font-weight;
+  }
+}

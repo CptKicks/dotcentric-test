@@ -1,0 +1,106 @@
+@import "../../../style/variables";
+
+$menuWidth: 260px;
+$menuOffset: -#{$menuWidth};
+
+$header-height: 62px;
+$header-lg-height: 90px;
+
+:export {
+  menuOffset: $menuOffset;
+}
+
+:global {
+  body {
+    padding-top: $header-height;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      padding-top: $header-lg-height;
+    }
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 90;
+  background: $white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $header-height;
+  }
+
+  &__logo {
+    height: 2rem;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+
+  &__nav {
+    background: $primary;
+    position: fixed;
+    top: 0;
+    right: $menuOffset;
+    width: $menuWidth;
+    height: 100vh;
+    z-index: 99;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0;
+
+    &__link {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1.125rem;
+      color: $white;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    &__container {
+      height: $header-lg-height;
+    }
+
+    &__logo {
+      height: 3.125rem;
+    }
+
+    &__menuIcon {
+      display: none;
+    }
+
+    &__nav {
+      height: auto;
+      right: unset;
+      width: auto;
+      position: static;
+      flex-direction: row;
+      background: none;
+      margin: 0 -1.56rem;
+
+      &__link {
+        color: $primary;
+        padding: 1rem 1.5625rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.section {
+  margin: 2.25rem 0;
+
+  @include media-breakpoint-up("lg") {
+    margin: 7rem 0;
+  }
+}
