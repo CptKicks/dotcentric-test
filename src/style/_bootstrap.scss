@@ -1,0 +1,62 @@
+$include-column-box-sizing: true !default;
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/buttons";
+
+
+@import "~bootstrap/scss/utilities";
+$utilities: map-merge(
+                $utilities,
+                (
+                        "font-size": null
+                )
+);
+
+//$utilities: map-get-multiple( $utilities, (
+//    "text-align",
+//    "color",
+//    "background-color",
+//    "display",
+//    "order",
+//    "flex",
+//    "flex-direction",
+//    "flex-grow",
+//    "flex-shrink",
+//    "flex-wrap",
+//    "justify-content",
+//    "align-items",
+//    "align-content",
+//    "align-self",
+//    //"margin",
+//    //"margin-x",
+//    //"margin-y",
+//    //"margin-top",
+//    //"margin-end",
+//    //"margin-bottom",
+//    //"margin-start",
+//    //"negative-margin",
+//    //"negative-margin-x",
+//    //"negative-margin-y",
+//    //"negative-margin-top",
+//    //"negative-margin-end",
+//    //"negative-margin-bottom",
+//    //"negative-margin-start",
+//    //"padding",
+//    //"padding-x",
+//    //"padding-y",
+//    //"padding-top",
+//    //"padding-end",
+//    //"padding-bottom",
+//    //"padding-start",
+//  )
+//);
+
+@import "~bootstrap/scss/utilities/api";

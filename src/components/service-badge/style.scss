@@ -1,0 +1,31 @@
+@import '../../style/variables';
+
+.serviceBadge {
+  text-align: center;
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+
+  &__indexCircle {
+    background: $secondary;
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+}

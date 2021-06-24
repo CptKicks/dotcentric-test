@@ -1,0 +1,45 @@
+@import "../../style/variables";
+
+.blockquote {
+  display: flex;
+  padding: 2rem 0;
+  border-top: 2px solid $lightgrey;
+  border-bottom: 2px solid $lightgrey;
+
+  &__textContainer {
+    padding-left: 1.25rem;
+  }
+
+  &__quotationMarks {
+    width: 1.875rem;
+    flex-shrink: 0;
+    padding-top: 0.375rem;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  &__author {
+    color: var(--bs-grey);
+  }
+
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    padding-left: 5.75rem;
+    padding-right: 5.75rem;
+    &__textContainer {
+      padding-left: 2.75rem;
+    }
+
+    &__quotationMarks {
+      width: 3.125rem;
+      flex-shrink: 0;
+      padding-top: 0.375rem;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+// Theme Colors
+// Theme
+$primary: #0E3757;
+$secondary: #F56A75;
+$grey: #8D9CA8;
+$lightgrey: #EEEEEE;
+$white: #FFFFFF;
+
+// State
+$success: #7ED321;
+$warning: #F5A623;
+$error: #D0021B;
+$disabled: $lightgrey;
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "grey": $grey,
+        "lightgrey": $lightgrey,
+        "white": $white,
+        "success": $success,
+        "warning": $warning,
+        "error": $error,
+        "disabled": $disabled,
+);
+
+// Typography
+$font-family-base: Roboto, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$body-color: $primary;
+$headings-font-weight: 400;
+
+$mobile-font-sizes: (
+        1: 2rem,
+        2: 1.75rem,
+        3: 1.5rem,
+        4: 1.25rem,
+        5: 1.125rem,
+        6: 1rem,
+        7: 0.875rem
+);
+
+$desktop-font-sizes: (
+        1: 3.125rem,
+        2: 2.25rem,
+        3: 1.75rem,
+        4: 1.5rem,
+        5: 1.125rem,
+        6: 1rem,
+        7: 0.875rem,
+);
+
+$font-weights: (
+        light: 300,
+        regular: 400,
+        medium: 500,
+);
+
+// Grid
+$grid-gutter-width: 1.875rem;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1120px,
+);
+
+// Negative Margins
+$enable-negative-margins: true;
+
+// Spacers
+$spacer: 1rem;
+$spacers: (
+        0: 0,
+        1: $spacer / 2,
+        2: $spacer,
+        3: $spacer * 1.375,
+        4: $spacer * 1.875,
+        5: $spacer * 2.625,
+        7: $spacer * 6,
+);
+
+// Buttons
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2rem;
+
+// Links
+$link-color: $secondary;
+$link-decoration: none;

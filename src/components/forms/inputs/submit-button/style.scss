@@ -1,0 +1,16 @@
+@import "../../../../style/variables";
+
+.submitButton {
+  &__button {
+    width: 100%;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    text-align: end;
+    width: auto;
+
+    &__button {
+      width: auto;
+    }
+  }
+}
